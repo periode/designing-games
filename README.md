@@ -1,6 +1,6 @@
 # Designing Games
 
-Repo for the IMA Low Res course, winter 2024.
+Repo for the IMA Low Res course, winter 2025.
 
 ## Course Description
 
