@@ -1,6 +1,6 @@
 # Designing Games
 
-Repo for the IMA Low Res course, winter 2024.
+Repo for the IMA Low Res course, winter 2025.
 
 ## Course Description
 
@@ -10,9 +10,9 @@ From a technical standpoint, we will build up a solid basis in game development 
 
 ## Course Information
 
-the __instructor__ for this course is [pierre depaz](https://pierredepaz.net), and the __resident__ is [Clemens Schöll](https://neopostmodern.com).
+the __instructor__ for this course is [pierre depaz](https://pierredepaz.net), and the __resident__ is [Robi Abera](https://tisch.nyu.edu/itp/itp-people/ima-low-res/robi-abera).
 
-the __meeting dates__ are from 05.01.2021 until 18.01.2021, and with daily sessions.
+the __meeting dates__ are from 06.01.2021 until 17.01.2021, and with daily sessions.
 
 the __meeting times__ are 14:00-17:00 CET.
 
