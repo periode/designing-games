@@ -1,322 +1,159 @@
-<!DOCTYPE html><html><head><meta charset="utf8"><title>designing games | prototyping games</title><style>body {
-	margin: 0;
-	padding: 0;
-	font-family: 'Inter UI', Trebuchet MS;
-	background-color: white;
-}
-
-header {
-	background-color: black;
-	color: white;
-  	padding: 10px;
-	overflow: auto;
-}
-
-header h1{
-	display: inline-block;
-	margin-left: 5%;
-	margin-right: 5%;
-	width: 40%;
-	font-size: 2.5em;
-}
-
-@media print{
-	header h1{
-		font-size: 1em;
-	}
-}
-
-.subject-name{
-	float: right;
-	text-align: right;
-}
-
-.topic-name{
-	float: left;
-	text-align: left;
-}
-
-a {
-	text-decoration: none;
-  color: #e77607;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
-a:visited {
-  color: #b25900;
-}
-
-header a{
-	color: white;
-	text-decoration: none;
-	border: 2px solid white;
-	padding: 3px;
-}
-
-main{
-	position: absolute;
-	margin-left: 20%;
-	width: 60%;
-	display: block;
-}
-
-@media (min-width: 640px) {
-	main{
-		margin: auto;
-		width: 100%;
-	}
-}
-
-@media print{
-	main{
-		margin-left: 5%;
-		width: 90%;
-	}
-}
-
-hr {
-	border: none;
-	height: 2px;
-	background-color: black;
-	float: left;
-	width: 100%;
-}
-
-img {
-	max-height: 300px;
-	max-width: 90%;
-}
-
-.concept-group{
-	width: 80%;
-	margin-left: 10%;
-	display: block;
-	float: left;
-}
-
-.concept-nav{
-	width: 30%;
-	float: right;
-	margin-right: 10%;
-}
-
-.overview-holder{
-	float: left;
-	width: 38%;
-	margin-left: 10%;
-}
-
-@media print{
-	.concept-group, .concept-nav{
-		width: 90%;
-		margin-left: 5%;
-	}
-}
-
-.concept-name {
-	width: 98%;
-	text-align: right;
-	float: right;
-	color: black;
-	border-bottom: 2px solid black;
-	padding: 1%;
-	font-size: 2em;
-}
-
-.break-before, .break-after{
-	display: block;
-	width: 100%;
-	height: 5px;
-	float: left;
-}
-
-.break-after{
-	page-break-after: always;
-}
-
-.page-group{
-	position: relative;
-	font-size: 1.2em;
-	width: 50%;
-	float: left;
-}
-
-@media print{
-
-	.page-group{
-		width: 70%;
-		page-break-inside: avoid;
-	}
-
-	.prep{
-		font-size: 0.8em;
-	}
-}
-
-.page-name{
-	width: 100%;
-	float: left;
-}
-
-.note-group{
-	position: relative;
-	width: 50%;
-	float: left;
-	overflow: auto;
-	text-align: left;
-}
-
-@media print{
-	.note-group{
-		width: 30%;
-	}
-}
-
-.note {
-	position: relative;
-	margin-bottom: 10px;
-	width: 100%;
-	overflow: auto;
-	white-space: pre;
-}
-
-@media print {
-	.note{
-		white-space: normal;
-	}
-}
-
-.writeup-group{
-	width: 100%;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	float: left;
-}
-
-@media print{
-	.writeup-group{
-		break-inside: avoid;
-		font-size: 0.9em;
-	}
-}
-
-.context{
-	white-space: pre-line;
-	border: 2px solid black;
-	width: 45%;
-	padding: 5px;
-	float: right;
-}
-
-@media print{
-	.context{
-		width: 100%
-	}
-}
-
-.writeup{
-	width: 100%;
-	float: left;
-	margin-bottom: 10px;
-	font-style: italic;
-	white-space: pre-line;
-}
-
-.web-only{
-	display: inherit;
-}
-
-.print-only{
-	display: none;
-}
-
-@media print{
-	* {
-		float: none !important;
-	}
-
-	.break-before{
-		page-break-before: always !important;
-	}
-
-	.break-after{
-		page-break-after: always !important;
-	}
-
-	.web-only{
-		display: none;
-	}
-
-	.print-only{
-		display: inline-block;
-	}
-}
-</style></head><body><header><h1 class="topic-name">prototyping games</h1><h1 class="subject-name"><a href="index.html">designing games</a></h1></header><main><div class="overview-holder"><h1>overview</h1></div><div class="concept-nav"><h1>summary</h1><ul><a class="web-only" href="#intro">intro</a><li class="print-only">intro</li></ul><ul><a class="web-only" href="#systems">systems</a><li class="print-only">systems</li></ul><ul><a class="web-only" href="#overview">overview</a><li class="print-only">overview</li></ul><ul><a class="web-only" href="#prototyping">prototyping</a><li class="print-only">prototyping</li></ul><ul><a class="web-only" href="#making pong">making pong</a><li class="print-only">making pong</li></ul><ul><a class="web-only" href="#outro">outro</a><li class="print-only">outro</li></ul><br></div><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="intro">intro</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">families of games</h3><div class="prep" concept="0"><p>welcome</p>
+<!DOCTYPE html><html><head><meta charset="utf8"><title>designing games | prototyping games</title><link rel="stylesheet" href="styles/main.css"></head><body><header><h1 class="topic-name">prototyping games</h1><h1 class="subject-name"><a href="index.html">designing games</a></h1></header><main><div class="overview-holder"><h1>overview</h1></div><div class="concept-nav"><h1>summary</h1><ul><a class="web-only" href="#intro">intro</a><li class="print-only">intro</li></ul><ul><a class="web-only" href="#systems">systems</a><li class="print-only">systems</li></ul><ul><a class="web-only" href="#overview">overview</a><li class="print-only">overview</li></ul><ul><a class="web-only" href="#prototyping">prototyping</a><li class="print-only">prototyping</li></ul><ul><a class="web-only" href="#making pong">making pong</a><li class="print-only">making pong</li></ul><ul><a class="web-only" href="#outro">outro</a><li class="print-only">outro</li></ul><br></div><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="intro">intro</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">families of games</h3><div class="prep" concept="0"><p>welcome</p>
 </div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div><div class="page-group"><h3 class="page-name">plan for the day</h3><div class="prep" concept="0"><ul>
 <li>genres of games</li>
-<li>basic components: goals, means, exceptions</li>
+<li>basic components: rules, goals, mechanics</li>
 <li>developing pong in unity</li>
 </ul>
 </div><div class="prep" concept="0"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="systems">systems</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">how do we make a game?</h3><div class="prep" concept="1"><p>we <em>design</em> a <em>system</em> for <em>interaction</em></p>
-<p>meaning inside the game vs. outside the game?</p>
+<ul>
+<li>arranging information/form, so that something makes sense <strong>meaning-making</strong></li>
+<li>problem-solving, functional aspect</li>
+<li>purpose (function), budget (constraint)</li>
+</ul>
+<p>rules can limit interaction - we can add context, incentive, objects (symbols, icons)</p>
 </div><div class="prep" concept="1"><p>Design is the process by which a designer creates <strong>context</strong> to be encountered by a <strong>participant</strong> from which <strong>meaning</strong> emerges.</p>
 </div><div class="prep" concept="1"><p>Systems are groups of <strong>objects</strong> with <strong>attributes</strong> and <strong>internal relations</strong> that exist in an <strong>environment</strong>.</p>
-</div><div class="prep" concept="1"><p><em>Interactivity</em> is a cyclical process in which each of the participants subsequently <strong>speak</strong>, <strong>listen</strong> and <strong>think</strong>. The quality of the interaction depends on the quality of each of those parts.</p>
+</div><div class="prep" concept="1"><img src="designing games_assets/mario_1-1.jpg" alt="mario_1-1.jpg"></div><div class="prep" concept="1"><p><em>Interactivity</em> is a cyclical process in which each of the participants subsequently <strong>speak</strong>, <strong>listen</strong> and <strong>think</strong>. The quality of the interaction depends on the quality of each of those parts.</p>
 </div><div class="prep" concept="1"><p>we need to figure out:</p>
 <ul>
 <li><strong>what</strong> should the player(s) accomplish? (goals)</li>
 <li><strong>how</strong> should they accomplish it? (rules, mechanics)</li>
 <li><strong>why</strong> should they accomplish it? (story, theme)</li>
 </ul>
-</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"></div></div><div class="page-group"><h3 class="page-name">goals</h3><div class="prep" concept="1"><p>what is the ultimate purpose? how do we qualify success?</p>
-<p>can be main, secondary, multiple</p>
-</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"></div></div><div class="page-group"><h3 class="page-name">rules</h3><div class="prep" concept="1"><p>what are the creative constraints of the game?</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"><div></div></div></div><div class="page-group"><h3 class="page-name">goals</h3><div class="prep" concept="1"><p>what is the ultimate purpose? how do we qualify success?</p>
+<p>can be main, secondary, multiple, external, internal</p>
+</div><div class="prep" concept="1"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"><ul>
+<li>Reach the end of a series of actions, reach a particular state (no more cards, full resources, etc.)</li>
+<li>Perform a series of actions within some constraints</li>
+<li>Perform a series of actions better than another (group of) player(s)</li>
+</ul>
+</div></div><div class="page-group"><h3 class="page-name">rules</h3><div class="prep" concept="1"><p>what are the creative constraints of the game?</p>
 <p>can be explicit, implicit, emergent</p>
-</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"></div></div><div class="page-group"><h3 class="page-name">mechanics</h3><div class="prep" concept="1"><p>what actions are at my disposal when it comes to achieving the <strong>goal</strong> within the <strong>rules</strong>?</p>
-</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"></div></div><div class="page-group"><h3 class="page-name">storytelling</h3><div class="prep" concept="1"><p>how do events unfold in the game?</p>
-<p>on-rails vs. open-world</p>
-<p>foreground or background</p>
-</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="overview">overview</h3><div class="page-group"><h3 class="page-name">types of games</h3><div class="prep" concept="2"><p>different configurations of <strong>rules</strong>, <strong>mechanics</strong>, <strong>input mechanisms</strong> and <strong>goals</strong> make for different types of games.</p>
-</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"></div></div><div class="page-group"><h3 class="page-name">board games</h3><div class="prep" concept="2"><img src="designing games_assets/game_of_ur.jpg" alt="game_of_ur.jpg"></div><div class="prep" concept="2"><img src="designing games_assets/mancala.jpg" alt="mancala.jpg"></div><div class="prep" concept="2"><img src="designing games_assets/Best-Go-Board-Game-Sets-Reviewed.webp" alt="Best-Go-Board-Game-Sets-Reviewed.webp"></div><div class="prep" concept="2"><img src="designing games_assets/Snakes_and_Ladders_P1.jpg" alt="Snakes_and_Ladders_P1.jpg"></div><div class="prep" concept="2"><img src="designing games_assets/chess.png" alt="chess.png"></div><div class="prep" concept="2"><p>a social event, reflect real-life, whether personal or political</p>
+<p><em>if ... then ...</em></p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"><ul>
+<li>rules constrain the actions of players</li>
+<li>rules decide on the evolution of the environment</li>
+</ul>
+<p>There are hard rules, and soft rules. Hard rules are the ones that are enforced automatically by the computer (e.g. not being able to fly in Mario Kart), while the soft rules are the ones that need to be deliberately triggered by the player (driving into a banana) or broken by the player (finding hacks to jump across roads and platforms)</p>
+</div></div><div class="page-group"><h3 class="page-name">mechanics</h3><div class="prep" concept="1"><p>what actions are at my disposal when it comes to achieving the <strong>goal</strong> within the <strong>rules</strong>?</p>
+<p>what is the action players do most often?</p>
+<p><em>players can ...</em></p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"><p>Actions can include movement (continuous decision, as in sports games), picks (momentary decisions, as in shooting games), moves (asynchronous decisions, as in chess).</p>
+</div></div><div class="page-group"><h3 class="page-name">storytelling</h3><div class="prep" concept="1"><p>how do I make sense of what I do?</p>
+<p>what can i interpret, and how? what is the <em>symbolic</em> part?</p>
+<ul>
+<li>heart = life</li>
+<li>key = open/access</li>
+<li>coins/stars = exchange-value / bait / accumulation / achievement / perfection</li>
+<li>doors = passageway</li>
+<li>castles = place you want to get into</li>
+<li>chests = valuable</li>
+<li>impact marks =  physical collision</li>
+<li>shiny stuff = power-up</li>
+</ul>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"><p>This is related to how elements are represented in the game (art direction), how events unfold in the game (on-rails vs. open-world, foreground vs. background), what kind of background/introduction is given to the player.</p>
+</div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="overview">overview</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">types of games</h3><div class="prep" concept="2"><p>different configurations of <strong>rules</strong>, <strong>mechanics</strong> and <strong>goals</strong> make for different types of games.</p>
+</div><div class="prep" concept="2"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"></div></div><div class="page-group"><h3 class="page-name">board games</h3><div class="prep" concept="2"><img src="designing games_assets/game_of_ur.jpg" alt="game_of_ur.jpg"></div><div class="prep" concept="2"><p>the royal game of ur, 2500 BC</p>
+</div><div class="prep" concept="2"><img src="designing games_assets/mancala.jpg" alt="mancala.jpg"></div><div class="prep" concept="2"><p>mancala, 200 AD</p>
+</div><div class="prep" concept="2"><img src="designing games_assets/Best-Go-Board-Game-Sets-Reviewed.webp" alt="Best-Go-Board-Game-Sets-Reviewed.webp"></div><div class="prep" concept="2"><p>Go, 500 BC</p>
+</div><div class="prep" concept="2"><img src="designing games_assets/Snakes_and_Ladders_P1.jpg" alt="Snakes_and_Ladders_P1.jpg"></div><div class="prep" concept="2"><p>snakes and ladders, 200 AD</p>
+</div><div class="prep" concept="2"><img src="designing games_assets/chess.png" alt="chess.png"></div><div class="prep" concept="2"><p>chess, 1400 AD</p>
+</div><div class="prep" concept="2"><p>a social event, reflect real-life, whether personal or political</p>
 <p>hidden information through randomness (re: religion) or strategy (re: politics)</p>
-<p><em>elegance</em> means complex behaviour emerging from simple rules</p>
-</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"></div></div><div class="page-group"><h3 class="page-name">sports</h3><div class="prep" concept="2"><img src="designing games_assets/olympic_games.jpg" alt="olympic_games.jpg"></div><div class="prep" concept="2"><img src="designing games_assets/zidane-bordeaux.jpg" alt="zidane-bordeaux.jpg"></div><div class="prep" concept="2"><img src="designing games_assets/ct-womens-basketball-usa-spain-spt-0821-20160820.jpg" alt="ct-womens-basketball-usa-spain-spt-0821-20160820.jpg"></div><div class="prep" concept="2"><p>central role of skill, limited by the body</p>
-<p>institutional events, based on the value of excellence (arete) and participation</p>
-</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"></div></div><div class="page-group"><h3 class="page-name">adventure</h3><div class="prep" concept="2"><img src="designing games_assets/Colossal-Cave-Adventure.png" alt="Colossal-Cave-Adventure.png"></div><div class="prep" concept="2"><img src="designing games_assets/monkey-island-2-pantallazo.jpg" alt="monkey-island-2-pantallazo.jpg"></div><div class="prep" concept="2"><img src="designing games_assets/Myst.jpg" alt="Myst.jpg"></div><div class="prep" concept="2"><img src="designing games_assets/heavyrain.webp" alt="heavyrain.webp"></div><div class="prep" concept="2"><img src="designing games_assets/thegraveyard.jpg" alt="thegraveyard.jpg"></div><div class="prep" concept="2"><p>spatial exploration, collecting objects, problem solving, storytelling</p>
+<p><em>elegance</em> means <strong>complex behavior emerging from simple rules</strong></p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"></div></div><div class="page-group"><h3 class="page-name">sports</h3><div class="prep" concept="2"><img src="designing games_assets/olympic_games.jpg" alt="olympic_games.jpg"></div><div class="prep" concept="2"><p>olympic games, 800 BC - 1896 AD</p>
+</div><div class="prep" concept="2"><img src="designing games_assets/zidane-bordeaux.jpg" alt="zidane-bordeaux.jpg"></div><div class="prep" concept="2"><p>Association football, 1863</p>
+</div><div class="prep" concept="2"><img src="designing games_assets/ct-womens-basketball-usa-spain-spt-0821-20160820.jpg" alt="ct-womens-basketball-usa-spain-spt-0821-20160820.jpg"></div><div class="prep" concept="2"><p>Women&#39;s Basketball, 1892</p>
+</div><div class="prep" concept="2"><p>central role of skill, limited/sublimated by the body&#39;s ability</p>
+<p>grassroots + institutional events, based on the value of excellence (<em>arete</em>) and geopolitical participation</p>
+</div><div class="prep" concept="2"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"></div></div><div class="page-group"><h3 class="page-name">adventure</h3><div class="prep" concept="2"><img src="designing games_assets/Colossal-Cave-Adventure.png" alt="Colossal-Cave-Adventure.png"></div><div class="prep" concept="2"><p>Colossal Cave Adventure, Don Woods and Will Crowther, 1977</p>
+</div><div class="prep" concept="2"><img src="designing games_assets/monkey-island-2-pantallazo.jpg" alt="monkey-island-2-pantallazo.jpg"></div><div class="prep" concept="2"><p>The Secret of Monkey Island, Lucasfilm Games, 1990</p>
+</div><div class="prep" concept="2"><img src="designing games_assets/Myst.jpg" alt="Myst.jpg"></div><div class="prep" concept="2"><p>Myst, Rand and Robin Miller, 1993</p>
+</div><div class="prep" concept="2"><img src="designing games_assets/heavyrain.webp" alt="heavyrain.webp"></div><div class="prep" concept="2"><p>Heavy Rain, Quantic Dream, 2010</p>
+<p>quick-time events</p>
+</div><div class="prep" concept="2"><img src="designing games_assets/thegraveyard.jpg" alt="thegraveyard.jpg"></div><div class="prep" concept="2"><p>The Graveyard, Tale of Tales, 2008</p>
+</div><div class="prep" concept="2"><p>spatial exploration, character dialogue, problem solving</p>
 <p>narratives as structures</p>
-<p>games as logic</p>
-</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"></div></div><div class="page-group"><h3 class="page-name">action games</h3><div class="prep" concept="2"><img src="designing games_assets/Spacewar_screenshot-5954c1c35f9b5815d91a10ec.jpg" alt="Spacewar_screenshot-5954c1c35f9b5815d91a10ec.jpg"></div><div class="prep" concept="2"><img src="designing games_assets/spaceInvader.avif" alt="spaceInvader.avif"></div><div class="prep" concept="2"><img src="designing games_assets/SI_3DSVC_SuperMarioBros_image1280w.jpg" alt="SI_3DSVC_SuperMarioBros_image1280w.jpg"></div><div class="prep" concept="2"><img src="designing games_assets/Zelda-NES-Screenshot-1.webp" alt="Zelda-NES-Screenshot-1.webp"></div><div class="prep" concept="2"><img src="designing games_assets/Grand-Theft-Auto-San-Andreas-game.jpg" alt="Grand-Theft-Auto-San-Andreas-game.jpg"></div><div class="prep" concept="2"><p>more personal games, based on the development of computers (autonomous enemies)</p>
+<p>games as customized storytelling</p>
+</div><div class="prep" concept="2"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"></div></div><div class="page-group"><h3 class="page-name">action</h3><div class="prep" concept="2"><img src="designing games_assets/Spacewar_screenshot-5954c1c35f9b5815d91a10ec.jpg" alt="Spacewar_screenshot-5954c1c35f9b5815d91a10ec.jpg"></div><div class="prep" concept="2"><p>Spacewar!, Steve Russell, 1962</p>
+</div><div class="prep" concept="2"><img src="designing games_assets/spaceInvader.avif" alt="spaceInvader.avif"></div><div class="prep" concept="2"><p>Space Invaders, Taito, 1978</p>
+</div><div class="prep" concept="2"><img src="designing games_assets/SI_3DSVC_SuperMarioBros_image1280w.jpg" alt="SI_3DSVC_SuperMarioBros_image1280w.jpg"></div><div class="prep" concept="2"><p>Super Mario Bros., Nintendo, 1985</p>
+</div><div class="prep" concept="2"><img src="designing games_assets/Zelda-NES-Screenshot-1.webp" alt="Zelda-NES-Screenshot-1.webp"></div><div class="prep" concept="2"><p>The Legend of Zelda, Nintendo, 1986</p>
+<p>(Shigeru Miyamoto made both Zelda and Mario)</p>
+</div><div class="prep" concept="2"><img src="designing games_assets/Grand-Theft-Auto-San-Andreas-game.jpg" alt="Grand-Theft-Auto-San-Andreas-game.jpg"></div><div class="prep" concept="2"><p>Grand Theft Auto, Rockstar North, 2004</p>
+</div><div class="prep" concept="2"><p>more personal games, based on the development of computers (autonomous enemies)</p>
 <p>positional, reflex based</p>
 <p>a combination of emergence <strong>and</strong> progression</p>
-</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"></div></div><div class="page-group"><h3 class="page-name">first person</h3><div class="prep" concept="2"><img src="designing games_assets/battlezone.png" alt="battlezone.png"></div><div class="prep" concept="2"><img src="designing games_assets/counter-strike-3737-1.jpg" alt="counter-strike-3737-1.jpg"></div><div class="prep" concept="2"><img src="designing games_assets/portal.jpg" alt="portal.jpg"></div><div class="prep" concept="2"><img src="designing games_assets/proteus-2013-01-04-96-up-ub-55673686-0002-1920x1080.png" alt="proteus-2013-01-04-96-up-ub-55673686-0002-1920x1080.png"></div><div class="prep" concept="2"><p>often conflated with shooting games, male teenage aesthetic</p>
+</div><div class="prep" concept="2"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"></div></div><div class="page-group"><h3 class="page-name">first person</h3><div class="prep" concept="2"><img src="designing games_assets/battlezone.png" alt="battlezone.png"></div><div class="prep" concept="2"><p>Battlezone, Atari,1980</p>
+</div><div class="prep" concept="2"><img src="designing games_assets/doom.jpeg" alt="doom.jpeg"></div><div class="prep" concept="2"><p>Doom, id Software, 1993</p>
+</div><div class="prep" concept="2"><img src="designing games_assets/counter-strike-3737-1.jpg" alt="counter-strike-3737-1.jpg"></div><div class="prep" concept="2"><p>Counter-Strike, Gooseman &amp; Cliffe, 1999; Valve, 2001</p>
+</div><div class="prep" concept="2"><img src="designing games_assets/portal.jpg" alt="portal.jpg"></div><div class="prep" concept="2"><p>Portal, Valve, 2007</p>
+</div><div class="prep" concept="2"><img src="designing games_assets/proteus-2013-01-04-96-up-ub-55673686-0002-1920x1080.png" alt="proteus-2013-01-04-96-up-ub-55673686-0002-1920x1080.png"></div><div class="prep" concept="2"><p>Proteus, Ed Key &amp; David Kanaga, 2013</p>
+</div><div class="prep" concept="2"><p>often conflated with shooting games, male teenage aesthetic</p>
 <p>switch to first-person exploration, focus on the environment and the sight (as a sense) rather than the sight (as weapon component)</p>
-</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"></div></div><div class="page-group"><h3 class="page-name">role playing</h3><div class="prep" concept="2"><img src="designing games_assets/dungeons-and-dragons-random-pn.jpg" alt="dungeons-and-dragons-random-pn.jpg"></div><div class="prep" concept="2"><img src="designing games_assets/nethack.jpg" alt="nethack.jpg"></div><div class="prep" concept="2"><img src="designing games_assets/earthbound.jpg" alt="earthbound.jpg"></div><div class="prep" concept="2"><img src="designing games_assets/ffvii.jpg" alt="ffvii.jpg"></div><div class="prep" concept="2"><img src="designing games_assets/darksouls.jpg" alt="darksouls.jpg"></div><div class="prep" concept="2"><p>projecting and transferring personnalities</p>
+</div><div class="prep" concept="2"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"></div></div><div class="page-group"><h3 class="page-name">role playing</h3><div class="prep" concept="2"><img src="designing games_assets/dungeons-and-dragons-random-pn.jpg" alt="dungeons-and-dragons-random-pn.jpg"></div><div class="prep" concept="2"><p>Dungeons and Dragons, Tactical Studies Rules, 1974</p>
+</div><div class="prep" concept="2"><img src="designing games_assets/nethack.jpg" alt="nethack.jpg"></div><div class="prep" concept="2"><p>Rogue, Toy &amp; Wichman, 1980</p>
+</div><div class="prep" concept="2"><img src="designing games_assets/earthbound.jpg" alt="earthbound.jpg"></div><div class="prep" concept="2"><p>Earthbound, HAL Laboratory, 1994</p>
+</div><div class="prep" concept="2"><img src="designing games_assets/ffvii.jpg" alt="ffvii.jpg"></div><div class="prep" concept="2"><p>Final Fantasy VII, Square Enix, 1997</p>
+</div><div class="prep" concept="2"><img src="designing games_assets/darksouls.jpg" alt="darksouls.jpg"></div><div class="prep" concept="2"><p>Dark Souls, From Software, 2011</p>
+</div><div class="prep" concept="2"><p>projecting and transferring personnalities (play as acting)</p>
 <p>leveling up and character development</p>
 <p>combined with action or strategy</p>
-</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"></div></div><div class="page-group"><h3 class="page-name">strategy</h3><div class="prep" concept="2"><img src="designing games_assets/Kriegsspiel_1824-3.jpg" alt="Kriegsspiel_1824-3.jpg"></div><div class="prep" concept="2"><img src="designing games_assets/axis-allies-50th-anniversary-edition-2.avif" alt="axis-allies-50th-anniversary-edition-2.avif"></div><div class="prep" concept="2"><img src="designing games_assets/civilization1.png" alt="civilization1.png"></div><div class="prep" concept="2"><img src="designing games_assets/xcom.jpg" alt="xcom.jpg"></div><div class="prep" concept="2"><img src="designing games_assets/advance-wars-2.jpg" alt="advance-wars-2.jpg"></div><div class="prep" concept="2"><img src="designing games_assets/starcraft2screenshot_7.jpg" alt="starcraft2screenshot_7.jpg"></div><div class="prep" concept="2"><img src="designing games_assets/leagueoflegends.jpg" alt="leagueoflegends.jpg"></div><div class="prep" concept="2"><p>luck / action / strategy</p>
-<p>strategy is: knowledge, information, calculation, predicting and guessing, certainty and uncertainty</p>
-<p>importance of terrain, unit differentiation, resource management</p>
-<p>strategy vs. tactics</p>
-<p>rock - paper - scissors</p>
-</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"></div></div><div class="page-group"><h3 class="page-name">simulation</h3><div class="prep" concept="2"><img src="designing games_assets/dopewars.jpg" alt="dopewars.jpg"></div><div class="prep" concept="2"><img src="designing games_assets/flightsimulator.png" alt="flightsimulator.png"></div><div class="prep" concept="2"><img src="designing games_assets/simcity.webp" alt="simcity.webp"></div><div class="prep" concept="2"><img src="designing games_assets/sims.webp" alt="sims.webp"></div><div class="prep" concept="2"><img src="designing games_assets/fifa23.jpg" alt="fifa23.jpg"></div><div class="prep" concept="2"><img src="designing games_assets/dwarffortress.webp" alt="dwarffortress.webp"></div><div class="prep" concept="2"><img src="designing games_assets/Gran-Turismo-7-PS5-7-1536x864.webp" alt="Gran-Turismo-7-PS5-7-1536x864.webp"></div><div class="prep" concept="2"><p>making the best from the dynamic world around you</p>
+</div><div class="prep" concept="2"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"></div></div><div class="page-group"><h3 class="page-name">strategy</h3><div class="prep" concept="2"><img src="designing games_assets/Kriegsspiel_1824-3.jpg" alt="Kriegsspiel_1824-3.jpg"></div><div class="prep" concept="2"><p>Kriegsspiel, Prussia, 19th century</p>
+</div><div class="prep" concept="2"><img src="designing games_assets/civilization1.png" alt="civilization1.png"></div><div class="prep" concept="2"><p>Civilization, MicroProse, 1991</p>
+</div><div class="prep" concept="2"><img src="designing games_assets/xcom.jpg" alt="xcom.jpg"></div><div class="prep" concept="2"><p>X-Com: UFO Defense, Mythos Games, 1994</p>
+</div><div class="prep" concept="2"><img src="designing games_assets/advance-wars-2.jpg" alt="advance-wars-2.jpg"></div><div class="prep" concept="2"><p>Advance Wars, Intelligent Systems, 2001</p>
+</div><div class="prep" concept="2"><img src="designing games_assets/starcraft2screenshot_7.jpg" alt="starcraft2screenshot_7.jpg"></div><div class="prep" concept="2"><p>StarCraft, Blizzard Entertainment, 1998</p>
+</div><div class="prep" concept="2"><img src="designing games_assets/leagueoflegends.jpg" alt="leagueoflegends.jpg"></div><div class="prep" concept="2"><p>League of Legends, Riot Games, 2009</p>
+</div><div class="prep" concept="2"><p>a combination of:</p>
+<ul>
+<li>resource management</li>
+<li>unit command (shifumi)</li>
+<li>terrain awareness</li>
+<li>information acquisition</li>
+</ul>
+<p>requires skills of planning and anticipation, in the <strong>fog of war</strong></p>
+<p>strategy vs. tactics -&gt; macro vs. micro</p>
+</div><div class="prep" concept="2"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"></div></div><div class="page-group"><h3 class="page-name">simulation</h3><div class="prep" concept="2"><img src="designing games_assets/dopewars.jpg" alt="dopewars.jpg"></div><div class="prep" concept="2"><p>Drug Wars, Dell, 1984</p>
+</div><div class="prep" concept="2"><img src="designing games_assets/flightsimulator.png" alt="flightsimulator.png"></div><div class="prep" concept="2"><p>Microsoft Flight Simulator 2000, Microsoft, 2000</p>
+</div><div class="prep" concept="2"><img src="designing games_assets/simcity.webp" alt="simcity.webp"></div><div class="prep" concept="2"><p>SimCity, Maxis, 2003</p>
+</div><div class="prep" concept="2"><img src="designing games_assets/sims.webp" alt="sims.webp"></div><div class="prep" concept="2"><p>The Sims 2, Maxis, 2004</p>
+</div><div class="prep" concept="2"><img src="designing games_assets/fifa23.jpg" alt="fifa23.jpg"></div><div class="prep" concept="2"><p>FIFA 2016, EA Sports, 2016</p>
+</div><div class="prep" concept="2"><img src="designing games_assets/dwarffortress.webp" alt="dwarffortress.webp"></div><div class="prep" concept="2"><p>Dwarf Fortress, Bay 12 games, 2006</p>
+</div><div class="prep" concept="2"><img src="designing games_assets/Gran-Turismo-7-PS5-7-1536x864.webp" alt="Gran-Turismo-7-PS5-7-1536x864.webp"></div><div class="prep" concept="2"><p>Gran Turismo 7, Polyphony Digital, 2022</p>
+</div><div class="prep" concept="2"><p>making the best from the dynamic world around you</p>
 <p>reaches into realism</p>
 <p>tweaking the complex rules and influencing autonomous agents</p>
-</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"></div></div><div class="page-group"><h3 class="page-name">casual</h3><div class="prep" concept="2"><img src="designing games_assets/tetris.jpg" alt="tetris.jpg"></div><div class="prep" concept="2"><img src="designing games_assets/Bejeweled_2_Classic_Mode_Level_1.webp" alt="Bejeweled_2_Classic_Mode_Level_1.webp"></div><div class="prep" concept="2"><img src="designing games_assets/solitaire.jpg" alt="solitaire.jpg"></div><div class="prep" concept="2"><img src="designing games_assets/farmville.jpg" alt="farmville.jpg"></div><div class="prep" concept="2"><img src="designing games_assets/angry-birds-ranked-original-100661872-orig.png" alt="angry-birds-ranked-original-100661872-orig.png"></div><div class="prep" concept="2"><p>simple base mechanic</p>
+<p>system first, <a target='_blank' href="https://concrete-press.com/how-to-get-rid-of-homeless/">story second</a></p>
+</div><div class="prep" concept="2"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"></div></div><div class="page-group"><h3 class="page-name">casual</h3><div class="prep" concept="2"><img src="designing games_assets/tetris.jpg" alt="tetris.jpg"></div><div class="prep" concept="2"><p>Tetris, Alexey Pajitnov, 1985</p>
+</div><div class="prep" concept="2"><img src="designing games_assets/Bejeweled_2_Classic_Mode_Level_1.webp" alt="Bejeweled_2_Classic_Mode_Level_1.webp"></div><div class="prep" concept="2"><p>Bejeweled, PopCap, 2000</p>
+</div><div class="prep" concept="2"><img src="designing games_assets/solitaire.jpg" alt="solitaire.jpg"></div><div class="prep" concept="2"><p>Solitaire, 1700 AD</p>
+</div><div class="prep" concept="2"><img src="designing games_assets/farmville.jpg" alt="farmville.jpg"></div><div class="prep" concept="2"><p>FarmVille, Zynga, 2009</p>
+</div><div class="prep" concept="2"><img src="designing games_assets/angry-birds-ranked-original-100661872-orig.png" alt="angry-birds-ranked-original-100661872-orig.png"></div><div class="prep" concept="2"><p>Angry Birds, Rovio, 2009</p>
+</div><div class="prep" concept="2"><p>simple base mechanic, a lot of <strong>juice</strong></p>
 <p>repetitive loop, small difficulty tweaks</p>
 <p>very broad audience</p>
 <p>economic model: free-to-play / pay-to-win</p>
-</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"></div></div><div class="page-group"><h3 class="page-name">indie</h3><div class="prep" concept="2"><img src="designing games_assets/rewind-cavestory-image02.png" alt="rewind-cavestory-image02.png"></div><div class="prep" concept="2"><img src="designing games_assets/passage.webp" alt="passage.webp"></div><div class="prep" concept="2"><img src="designing games_assets/Braid-screen01.jpg" alt="Braid-screen01.jpg"></div><div class="prep" concept="2"><img src="designing games_assets/minecraft.webp" alt="minecraft.webp"></div><div class="prep" concept="2"><img src="designing games_assets/Flower001.jpg" alt="Flower001.jpg"></div><div class="prep" concept="2"><img src="designing games_assets/dys4ia_03.png" alt="dys4ia_03.png"></div><div class="prep" concept="2"><p>experimental, small projects</p>
+</div><div class="prep" concept="2"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"></div></div><div class="page-group"><h3 class="page-name">indie</h3><div class="prep" concept="2"><img src="designing games_assets/rewind-cavestory-image02.png" alt="rewind-cavestory-image02.png"></div><div class="prep" concept="2"><p>Cave Story, Daisuke Amaya, 2004</p>
+</div><div class="prep" concept="2"><img src="designing games_assets/prince_of_persia_1.webp" alt="prince_of_persia_1.webp"></div><div class="prep" concept="2"><p>prince of persia, Jordan Mechner, 1989</p>
+</div><div class="prep" concept="2"><img src="designing games_assets/another-world-16290-6.jpg" alt="another-world-16290-6.jpg"></div><div class="prep" concept="2"><p>another world, éric chahi, 1991</p>
+</div><div class="prep" concept="2"><img src="designing games_assets/passage.webp" alt="passage.webp"></div><div class="prep" concept="2"><p>Passage, Jason Rohrer, 2007</p>
+</div><div class="prep" concept="2"><img src="designing games_assets/Braid-screen01.jpg" alt="Braid-screen01.jpg"></div><div class="prep" concept="2"><p>Braid, Number None, 2008</p>
+</div><div class="prep" concept="2"><img src="designing games_assets/minecraft.webp" alt="minecraft.webp"></div><div class="prep" concept="2"><p>Minecraft, Mojang, 2009-2011</p>
+</div><div class="prep" concept="2"><img src="designing games_assets/Flower001.jpg" alt="Flower001.jpg"></div><div class="prep" concept="2"><p>Flower, Thatgamecompany, 2009</p>
+</div><div class="prep" concept="2"><img src="designing games_assets/7-Journey.jpg" alt="7-Journey.jpg"></div><div class="prep" concept="2"><p>journey, thatgamecompany, 2011</p>
+</div><div class="prep" concept="2"><img src="designing games_assets/dys4ia_03.png" alt="dys4ia_03.png"></div><div class="prep" concept="2"><p>dys4ia, Anna Anthropy, 2012</p>
+</div><div class="prep" concept="2"><p>experimental, small projects</p>
 <p>a lot of personality</p>
 <p>play with the standards and expectations of traditional video games practices</p>
-</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="prototyping">prototyping</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">making a prototype</h3><div class="prep" concept="3"><ul>
+</div><div class="prep" concept="2"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="prototyping">prototyping</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">making a prototype</h3><div class="prep" concept="3"><ul>
 <li><p>groups of 3/4</p>
 </li>
 <li><p>dice, papers and tokens</p>
 </li>
-<li><p>start with a goal? start with a story? start with an action?</p>
+<li><p>start with a genre? start with a goal? start with a story? start with an action?</p>
+</li>
+<li><p>theme: <strong>short circuit</strong></p>
 </li>
 </ul>
 </div><div class="prep" concept="3"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="3"></div></div><div class="page-group"><h3 class="page-name">giving and getting feedback</h3><div class="prep" concept="3"><p>critical feedback is the highest form of respect</p>
@@ -325,7 +162,7 @@ img {
 <li>paying attention</li>
 <li>expressing how you perceived the experience</li>
 <li>things you liked</li>
-<li>things you would suggest and why</li>
+<li>things you would suggest to change and why</li>
 </ol>
 </div><div class="prep" concept="3"><p><strong>getting</strong></p>
 <ol start="0">
@@ -340,6 +177,7 @@ img {
 <p>feedback</p>
 </div><div class="prep" concept="3"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="3"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="making pong">making pong</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">practice makes perfect</h3><div class="prep" concept="4"><p>copying classics is a great way to learn</p>
 <p><strong>PONG</strong> is the first commercial digital game, and is now part of the permanent collection of MoMA</p>
+</div><div class="prep" concept="4"><img src="designing games_assets/Pong.png" alt="Pong.png"></div><div class="prep" concept="4"><img src="designing games_assets/Atari_Pong_arcade_game_cabinet.jpg" alt="Atari_Pong_arcade_game_cabinet.jpg"></div><div class="prep" concept="4"><p>Pong, Atari, 1979</p>
 </div><div class="prep" concept="4"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="4"></div></div><div class="page-group"><h3 class="page-name">steps</h3><div class="prep" concept="4"><ol>
 <li>paddles</li>
 <li>ball</li>
