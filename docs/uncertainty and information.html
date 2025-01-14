@@ -1,0 +1,91 @@
+<!DOCTYPE html><html><head><meta charset="utf8"><title>designing games | uncertainty and information</title><link rel="stylesheet" href="styles/main.css"></head><body><header><h1 class="topic-name">uncertainty and information</h1><h1 class="subject-name"><a href="index.html">designing games</a></h1></header><main><div class="overview-holder"><h1>overview</h1></div><div class="concept-nav"><h1>summary</h1><ul><a class="web-only" href="#intro">intro</a><li class="print-only">intro</li></ul><ul><a class="web-only" href="#randomness">randomness</a><li class="print-only">randomness</li></ul><ul><a class="web-only" href="#communication">communication</a><li class="print-only">communication</li></ul><ul><a class="web-only" href="#exercise">exercise</a><li class="print-only">exercise</li></ul><ul><a class="web-only" href="#audio in games">audio in games</a><li class="print-only">audio in games</li></ul><ul><a class="web-only" href="#implementing audio">implementing audio</a><li class="print-only">implementing audio</li></ul><br></div><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="intro">intro</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">randomness and information</h3><div class="prep" concept="0"><p>welcome</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div><div class="page-group"><h3 class="page-name">housekeeping</h3><div class="prep" concept="0"><ul>
+<li>show on Saturday (evening): computers, controllers, headphones, documentation (digital), rules</li>
+<li>presentation on Friday (evening): 5min</li>
+</ul>
+</div><div class="prep" concept="0"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div><div class="page-group"><h3 class="page-name">plan for the day</h3><div class="prep" concept="0"><ul>
+<li>randomness and information</li>
+<li>unity: animations and prefabs, noise and particles</li>
+<li>working on games</li>
+</ul>
+</div><div class="prep" concept="0"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="0"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="randomness">randomness</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">randomness and information</h3><div class="prep" concept="1"><p>what is the meaning of a dice roll?</p>
+<ul>
+<li>a moment of tension, leading to happiness or sadness</li>
+<li>luck, not having control but having to deal with consequences</li>
+<li>consequences we don&#39;t control</li>
+<li>relinquishing control to a 3rd-party object</li>
+<li>the results makes us ask <strong>why</strong>?</li>
+</ul>
+</div><div class="prep" concept="1"><p>a probability event (micro) gets transformed into a meaningful event through interpretation (macro)</p>
+<p>meaning increases by the building of context (short/mid/long-term consequences, past knowledge of players and characters)</p>
+</div><div class="prep" concept="1"><ul>
+<li><strong>full</strong> randomness games (yahtzee)</li>
+<li><strong>partial</strong> randomness (backgammon, risk)</li>
+<li><strong>controlled</strong> randomness (unknown change within a known structure, dungeons and dragons -&gt; fairness)</li>
+<li><strong>apparent</strong> uncertainty (civilization, fire emblem)</li>
+<li><strong>no randomness</strong> (but still uncertainty!), kids games, tag, monkey island, crosswords, sudoku, wordle</li>
+</ul>
+</div><div class="prep" concept="1"><p><strong>the feeling of uncertainty is more important than randomness itself</strong></p>
+</div><div class="prep" concept="1"><p>what are some aspects of uncertainty in your game? do they depend on mathematical randomness?</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"></div></div><div class="page-group"><h3 class="page-name">types of information</h3><div class="prep" concept="1"><p>information is transformed into knowledge, and exists in a space</p>
+<p>information is a measure of freedom in decision making</p>
+</div><div class="prep" concept="1"><img src="designing games_assets/Mastermind.jpg" alt="Mastermind.jpg"></div><div class="prep" concept="1"><p>about the state of the player (hearts, war)</p>
+<p>about the state of the world (audio visual cues)</p>
+<p>about the actions to be taken (physical actions, epistemic actions)</p>
+</div><div class="prep" concept="1"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"></div></div><div class="page-group"><h3 class="page-name">communicating information</h3><div class="prep" concept="1"><p>what are the variables that we can play/that we can take into account with when communicate?</p>
+<p>claude shannon, a mathematical theory of communication</p>
+<p>sender -&gt; channel (+/- noise) -&gt; receiver</p>
+</div><div class="prep" concept="1"><img src="designing games_assets/jakobson.png" alt="jakobson.png"></div><div class="prep" concept="1"><p><a target='_blank' href="https://en.wikipedia.org/wiki/Jakobson%27s_functions_of_language">roman jakobson&#39;s functions of language</a></p>
+<ul>
+<li><strong>content</strong> of the message (poetic)</li>
+<li><strong>context</strong> of the message (situational)</li>
+<li><strong>tone</strong> of the message (emotive), <strong>reception</strong> of the message (conative)</li>
+<li><strong>establishment</strong> and maintaining of the message (practical)</li>
+<li>playing with the message (metalingual), breaking the fourth wall</li>
+</ul>
+</div><div class="prep" concept="1"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="1"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="communication">communication</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">displaying information</h3><div class="prep" concept="2"><p>knowledge is power, and knowledge should be communicated</p>
+</div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"></div></div><div class="page-group"><h3 class="page-name">feedback</h3><div class="prep" concept="2"><p>every player action should have a multisensorial feedback (sound, movement, display, etc.)</p>
+</div><div class="prep" concept="2"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"></div></div><div class="page-group"><h3 class="page-name">noise</h3><div class="prep" concept="2"><p>noise is introduced to suggest uncertainty and curiosity</p>
+<p>e.g. abstracting complex systems, highlighting the absent pieces of information, replacing things with &quot;???&quot;</p>
+</div><div class="prep" concept="2"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"></div></div><div class="page-group"><h3 class="page-name">redundancy</h3><div class="prep" concept="2"><p>a.k.a players don&#39;t read</p>
+<p>repeat information with multiple media, multiple formats</p>
+</div><div class="prep" concept="2"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="2"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="exercise">exercise</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">exercise</h3><div class="prep" concept="3"><p>what are the important pieces of information in your game?</p>
+<p>how do you communicate them?</p>
+<p>how else could you communicate them?</p>
+<hr>
+<p><strong>the second bomb</strong>:</p>
+<ul>
+<li>clues -&gt; communicated in dialogue, stored in notebook</li>
+<li>character selection -&gt; flat UI and buttons</li>
+</ul>
+<p><strong>the labyrinth</strong>:</p>
+<ul>
+<li>where are you -&gt; maze</li>
+<li>how to move -&gt; wasd</li>
+<li>follow the music -&gt; kind of obvious (music volume + text featured inside a canvas or painting or wall text) + object moving + statues pointing towards a direction, switch between different audio sources</li>
+<li>one specific music -&gt; dead end quite soon</li>
+<li>information about the music -&gt; text on the wall coherent with museum</li>
+</ul>
+<hr>
+<p><strong>rabbit</strong></p>
+<ul>
+<li>you are going somewhere -&gt; topography, light at the end of tunnel</li>
+<li>limited amount of time -&gt; lifeforce draining (healthbar in UI), vignette gets darker as the timer runs out, dialogue letting you know time is running out, get physically</li>
+<li>player archetype -&gt; tarot card (could display archetypes chosen over time)</li>
+</ul>
+<p>diegetic / non-diegetic</p>
+</div><div class="prep" concept="3"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="3"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="audio in games">audio in games</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">types of audio in games</h3><div class="prep" concept="4"><ul>
+<li>sfx</li>
+<li>cinematic sound</li>
+<li>ambient sound</li>
+</ul>
+</div><div class="prep" concept="4"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="4"></div></div><div class="page-group"><h3 class="page-name">sfx</h3><div class="prep" concept="4"><p>functional feedback, short, very often</p>
+<p>compressed format</p>
+</div><div class="prep" concept="4"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="4"></div></div><div class="page-group"><h3 class="page-name">cinematic</h3><div class="prep" concept="4"><p>linear feeling, long tracks, loops (fade in, fade out or repeat point)</p>
+</div><div class="prep" concept="4"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="4"></div></div><div class="page-group"><h3 class="page-name">ambient</h3><div class="prep" concept="4"><p>non-linear, dynamic (reactive or random)</p>
+</div><div class="prep" concept="4"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="4"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div><div class="concept-group"><h3 class="concept-name" id="implementing audio">implementing audio</h3><div class="context"><div></div><div class="context-links"></div><hr></div><div class="page-group"><h3 class="page-name">tools</h3><div class="prep" concept="5"><p>fmod</p>
+<p>wavves</p>
+</div><div class="prep" concept="5"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="5"></div></div><div class="page-group"><h3 class="page-name">programming tricks</h3><div class="prep" concept="5"><p>adjusting volume/pitch on playback</p>
+</div><div class="prep" concept="5"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="5"></div></div><div class="page-group"><h3 class="page-name">unity audio engine</h3><div class="prep" concept="5"><p>mixer</p>
+<p>reverb zones</p>
+</div><div class="prep" concept="5"></div></div><div class="note-group"></div><div class="writeup-group"><div class="prep writeup" concept="5"></div></div></div><br><div class="break-after" style="page-break-after:always;"></div></main></body></html>
